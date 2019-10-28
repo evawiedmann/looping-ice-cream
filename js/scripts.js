@@ -1,25 +1,11 @@
 $(document).ready(function () {
-  $("#blanks form").submit(function (event) {
-    var favFood = $("input#favFood").val();
-    var favFood2 = $("input#favFood2").val();
 
-    $(".favFood").text(favFood);
-    $(".favFood2").text(favFood2);
+    var favIceCreams = ["Vanilla", "Chocolate", "Strawberry" ];
+    favIceCreams.forEach(function(favIceCream) {
+      $("#result").append(favIceCreams);
+    });
 
-    var favFoodArray = [];
-    favFoodArray.push(favFood);
-    favFoodArray.push(favFood2);
-
-    console.log(favFoodArray);
-    event.preventDefault();
-  });
+    console.log();
 
 
-});
-
-
-var total = 0;
-var summands = [100,2,3,2,4]
-summands.forEach(function(summand) {
-total += summand;
 });
